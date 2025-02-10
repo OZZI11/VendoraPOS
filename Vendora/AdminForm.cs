@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Vendora
 {
-    public partial class CashierForm : Form
+    public partial class AdminForm : Form
     {
-        public CashierForm()
+        public AdminForm()
         {
             InitializeComponent();
-        }
-
-        private void CashierForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -22,6 +22,7 @@ namespace DomainLayer.Models
         public string Vendor { get; set; }
         public string Contact_Number { get; set; }
         public string Stockdate { get; set; }
-        public string Entry_Quantityt { get; set; }
+        public string Entry_Quantity { get; set; }
     }
 }
+
