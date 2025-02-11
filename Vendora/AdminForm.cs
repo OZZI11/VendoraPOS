@@ -24,19 +24,6 @@ namespace Vendora
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void AdminForm_Load(object sender, EventArgs e)
         {
 
