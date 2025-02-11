@@ -29,5 +29,10 @@ namespace Vendora
 
         }
 
+        private void btnAddVendor_Click(object sender, EventArgs e)
+        {
+            VendorDetails details = new VendorDetails();
+            details.ShowDialog();
+        }
     }
 }

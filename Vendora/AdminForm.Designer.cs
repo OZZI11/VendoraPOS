@@ -38,6 +38,8 @@
             materialButton2 = new MaterialSkin.Controls.MaterialButton();
             materialButton1 = new MaterialSkin.Controls.MaterialButton();
             vendorTab = new TabPage();
+            materialMaskedTextBox1 = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            btnAddVendor = new MaterialSkin.Controls.MaterialButton();
             stockEntryTab = new TabPage();
             stockAdjustmentTab = new TabPage();
             brandsCategoryTab = new TabPage();
@@ -47,6 +49,7 @@
             materialTabControl1.SuspendLayout();
             productTab.SuspendLayout();
             panel1.SuspendLayout();
+            vendorTab.SuspendLayout();
             SuspendLayout();
             // 
             // materialTabControl1
@@ -69,6 +72,7 @@
             materialTabControl1.SelectedIndex = 0;
             materialTabControl1.Size = new Size(1914, 1013);
             materialTabControl1.TabIndex = 0;
+            materialTabControl1.SystemColorsChanged += btnAddVendor_Click;
             // 
             // dashboardTab
             // 
@@ -201,12 +205,76 @@
             // 
             // vendorTab
             // 
+            vendorTab.Controls.Add(materialMaskedTextBox1);
+            vendorTab.Controls.Add(btnAddVendor);
             vendorTab.Location = new Point(4, 29);
             vendorTab.Name = "vendorTab";
             vendorTab.Size = new Size(1906, 980);
             vendorTab.TabIndex = 2;
             vendorTab.Text = "Vendor";
             vendorTab.UseVisualStyleBackColor = true;
+            // 
+            // materialMaskedTextBox1
+            // 
+            materialMaskedTextBox1.AllowPromptAsInput = true;
+            materialMaskedTextBox1.AnimateReadOnly = false;
+            materialMaskedTextBox1.AsciiOnly = false;
+            materialMaskedTextBox1.BackgroundImageLayout = ImageLayout.None;
+            materialMaskedTextBox1.BeepOnError = false;
+            materialMaskedTextBox1.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
+            materialMaskedTextBox1.Depth = 0;
+            materialMaskedTextBox1.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialMaskedTextBox1.HidePromptOnLeave = false;
+            materialMaskedTextBox1.HideSelection = true;
+            materialMaskedTextBox1.Hint = "Search";
+            materialMaskedTextBox1.InsertKeyMode = InsertKeyMode.Default;
+            materialMaskedTextBox1.LeadingIcon = null;
+            materialMaskedTextBox1.Location = new Point(1389, 50);
+            materialMaskedTextBox1.Mask = "";
+            materialMaskedTextBox1.MaxLength = 32767;
+            materialMaskedTextBox1.MouseState = MaterialSkin.MouseState.OUT;
+            materialMaskedTextBox1.Name = "materialMaskedTextBox1";
+            materialMaskedTextBox1.PasswordChar = '\0';
+            materialMaskedTextBox1.PrefixSuffixText = null;
+            materialMaskedTextBox1.PromptChar = '_';
+            materialMaskedTextBox1.ReadOnly = false;
+            materialMaskedTextBox1.RejectInputOnFirstFailure = false;
+            materialMaskedTextBox1.ResetOnPrompt = true;
+            materialMaskedTextBox1.ResetOnSpace = true;
+            materialMaskedTextBox1.RightToLeft = RightToLeft.No;
+            materialMaskedTextBox1.SelectedText = "";
+            materialMaskedTextBox1.SelectionLength = 0;
+            materialMaskedTextBox1.SelectionStart = 0;
+            materialMaskedTextBox1.ShortcutsEnabled = true;
+            materialMaskedTextBox1.Size = new Size(336, 48);
+            materialMaskedTextBox1.SkipLiterals = true;
+            materialMaskedTextBox1.TabIndex = 1;
+            materialMaskedTextBox1.TabStop = false;
+            materialMaskedTextBox1.TextAlign = HorizontalAlignment.Left;
+            materialMaskedTextBox1.TextMaskFormat = MaskFormat.IncludeLiterals;
+            materialMaskedTextBox1.TrailingIcon = null;
+            materialMaskedTextBox1.UseSystemPasswordChar = false;
+            materialMaskedTextBox1.ValidatingType = null;
+            // 
+            // btnAddVendor
+            // 
+            btnAddVendor.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnAddVendor.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnAddVendor.Depth = 0;
+            btnAddVendor.HighEmphasis = true;
+            btnAddVendor.Icon = null;
+            btnAddVendor.Location = new Point(1745, 62);
+            btnAddVendor.Margin = new Padding(4, 6, 4, 6);
+            btnAddVendor.MouseState = MaterialSkin.MouseState.HOVER;
+            btnAddVendor.Name = "btnAddVendor";
+            btnAddVendor.NoAccentTextColor = Color.Empty;
+            btnAddVendor.Size = new Size(112, 36);
+            btnAddVendor.TabIndex = 0;
+            btnAddVendor.Text = "Add Vendor";
+            btnAddVendor.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnAddVendor.UseAccentColor = false;
+            btnAddVendor.UseVisualStyleBackColor = true;
+            btnAddVendor.Click += btnAddVendor_Click;
             // 
             // stockEntryTab
             // 
@@ -268,6 +336,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1920, 1080);
             Controls.Add(materialTabControl1);
+            DrawerTabControl = materialTabControl1;
             Name = "AdminForm";
             Text = "AdminForm";
             Load += AdminForm_Load;
@@ -275,6 +344,8 @@
             productTab.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            vendorTab.ResumeLayout(false);
+            vendorTab.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -296,5 +367,7 @@
         private MaterialSkin.Controls.MaterialButton materialButton3;
         private MaterialSkin.Controls.MaterialButton materialButton2;
         private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialButton btnAddVendor;
+        private MaterialSkin.Controls.MaterialMaskedTextBox materialMaskedTextBox1;
     }
 }
