@@ -32,24 +32,29 @@
             dashboardTab = new TabPage();
             productTab = new TabPage();
             panel1 = new Panel();
-            materialButton5 = new MaterialSkin.Controls.MaterialButton();
-            materialButton4 = new MaterialSkin.Controls.MaterialButton();
-            materialButton3 = new MaterialSkin.Controls.MaterialButton();
-            materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            materialButton1 = new MaterialSkin.Controls.MaterialButton();
             vendorTab = new TabPage();
-            materialMaskedTextBox1 = new MaterialSkin.Controls.MaterialMaskedTextBox();
-            btnAddVendor = new MaterialSkin.Controls.MaterialButton();
+            panel2 = new Panel();
             stockEntryTab = new TabPage();
+            panel3 = new Panel();
             stockAdjustmentTab = new TabPage();
+            panel4 = new Panel();
             brandsCategoryTab = new TabPage();
+            panel5 = new Panel();
             recordsTab = new TabPage();
+            panel6 = new Panel();
             salesHistoryTab = new TabPage();
+            panel7 = new Panel();
             userAccountsTab = new TabPage();
+            panel8 = new Panel();
             materialTabControl1.SuspendLayout();
             productTab.SuspendLayout();
-            panel1.SuspendLayout();
             vendorTab.SuspendLayout();
+            stockEntryTab.SuspendLayout();
+            stockAdjustmentTab.SuspendLayout();
+            brandsCategoryTab.SuspendLayout();
+            recordsTab.SuspendLayout();
+            salesHistoryTab.SuspendLayout();
+            userAccountsTab.SuspendLayout();
             SuspendLayout();
             // 
             // materialTabControl1
@@ -72,7 +77,6 @@
             materialTabControl1.SelectedIndex = 0;
             materialTabControl1.Size = new Size(1914, 1013);
             materialTabControl1.TabIndex = 0;
-            materialTabControl1.SystemColorsChanged += btnAddVendor_Click;
             // 
             // dashboardTab
             // 
@@ -97,116 +101,15 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(materialButton5);
-            panel1.Controls.Add(materialButton4);
-            panel1.Controls.Add(materialButton3);
-            panel1.Controls.Add(materialButton2);
-            panel1.Controls.Add(materialButton1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(1900, 974);
             panel1.TabIndex = 0;
             // 
-            // materialButton5
-            // 
-            materialButton5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton5.Depth = 0;
-            materialButton5.HighEmphasis = true;
-            materialButton5.Icon = null;
-            materialButton5.Location = new Point(824, 40);
-            materialButton5.Margin = new Padding(4, 6, 4, 6);
-            materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton5.Name = "materialButton5";
-            materialButton5.NoAccentTextColor = Color.Empty;
-            materialButton5.Size = new Size(158, 36);
-            materialButton5.TabIndex = 4;
-            materialButton5.Text = "materialButton5";
-            materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton5.UseAccentColor = false;
-            materialButton5.UseVisualStyleBackColor = true;
-            // 
-            // materialButton4
-            // 
-            materialButton4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton4.Depth = 0;
-            materialButton4.HighEmphasis = true;
-            materialButton4.Icon = null;
-            materialButton4.Location = new Point(612, 40);
-            materialButton4.Margin = new Padding(4, 6, 4, 6);
-            materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton4.Name = "materialButton4";
-            materialButton4.NoAccentTextColor = Color.Empty;
-            materialButton4.Size = new Size(158, 36);
-            materialButton4.TabIndex = 3;
-            materialButton4.Text = "materialButton4";
-            materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton4.UseAccentColor = false;
-            materialButton4.UseVisualStyleBackColor = true;
-            // 
-            // materialButton3
-            // 
-            materialButton3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton3.Depth = 0;
-            materialButton3.HighEmphasis = true;
-            materialButton3.Icon = null;
-            materialButton3.Location = new Point(422, 40);
-            materialButton3.Margin = new Padding(4, 6, 4, 6);
-            materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton3.Name = "materialButton3";
-            materialButton3.NoAccentTextColor = Color.Empty;
-            materialButton3.Size = new Size(158, 36);
-            materialButton3.TabIndex = 2;
-            materialButton3.Text = "materialButton3";
-            materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton3.UseAccentColor = false;
-            materialButton3.UseVisualStyleBackColor = true;
-            // 
-            // materialButton2
-            // 
-            materialButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton2.Depth = 0;
-            materialButton2.HighEmphasis = true;
-            materialButton2.Icon = null;
-            materialButton2.Location = new Point(206, 106);
-            materialButton2.Margin = new Padding(4, 6, 4, 6);
-            materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton2.Name = "materialButton2";
-            materialButton2.NoAccentTextColor = Color.Empty;
-            materialButton2.Size = new Size(158, 36);
-            materialButton2.TabIndex = 1;
-            materialButton2.Text = "materialButton2";
-            materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton2.UseAccentColor = false;
-            materialButton2.UseVisualStyleBackColor = true;
-            // 
-            // materialButton1
-            // 
-            materialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton1.Depth = 0;
-            materialButton1.HighEmphasis = true;
-            materialButton1.Icon = null;
-            materialButton1.Location = new Point(66, 106);
-            materialButton1.Margin = new Padding(4, 6, 4, 6);
-            materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton1.Name = "materialButton1";
-            materialButton1.NoAccentTextColor = Color.Empty;
-            materialButton1.Size = new Size(64, 36);
-            materialButton1.TabIndex = 0;
-            materialButton1.Text = "All";
-            materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton1.UseAccentColor = false;
-            materialButton1.UseVisualStyleBackColor = true;
-            // 
             // vendorTab
             // 
-            vendorTab.Controls.Add(materialMaskedTextBox1);
-            vendorTab.Controls.Add(btnAddVendor);
+            vendorTab.Controls.Add(panel2);
             vendorTab.Location = new Point(4, 29);
             vendorTab.Name = "vendorTab";
             vendorTab.Size = new Size(1906, 980);
@@ -214,70 +117,16 @@
             vendorTab.Text = "Vendor";
             vendorTab.UseVisualStyleBackColor = true;
             // 
-            // materialMaskedTextBox1
+            // panel2
             // 
-            materialMaskedTextBox1.AllowPromptAsInput = true;
-            materialMaskedTextBox1.AnimateReadOnly = false;
-            materialMaskedTextBox1.AsciiOnly = false;
-            materialMaskedTextBox1.BackgroundImageLayout = ImageLayout.None;
-            materialMaskedTextBox1.BeepOnError = false;
-            materialMaskedTextBox1.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
-            materialMaskedTextBox1.Depth = 0;
-            materialMaskedTextBox1.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialMaskedTextBox1.HidePromptOnLeave = false;
-            materialMaskedTextBox1.HideSelection = true;
-            materialMaskedTextBox1.Hint = "Search";
-            materialMaskedTextBox1.InsertKeyMode = InsertKeyMode.Default;
-            materialMaskedTextBox1.LeadingIcon = null;
-            materialMaskedTextBox1.Location = new Point(1389, 50);
-            materialMaskedTextBox1.Mask = "";
-            materialMaskedTextBox1.MaxLength = 32767;
-            materialMaskedTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            materialMaskedTextBox1.Name = "materialMaskedTextBox1";
-            materialMaskedTextBox1.PasswordChar = '\0';
-            materialMaskedTextBox1.PrefixSuffixText = null;
-            materialMaskedTextBox1.PromptChar = '_';
-            materialMaskedTextBox1.ReadOnly = false;
-            materialMaskedTextBox1.RejectInputOnFirstFailure = false;
-            materialMaskedTextBox1.ResetOnPrompt = true;
-            materialMaskedTextBox1.ResetOnSpace = true;
-            materialMaskedTextBox1.RightToLeft = RightToLeft.No;
-            materialMaskedTextBox1.SelectedText = "";
-            materialMaskedTextBox1.SelectionLength = 0;
-            materialMaskedTextBox1.SelectionStart = 0;
-            materialMaskedTextBox1.ShortcutsEnabled = true;
-            materialMaskedTextBox1.Size = new Size(336, 48);
-            materialMaskedTextBox1.SkipLiterals = true;
-            materialMaskedTextBox1.TabIndex = 1;
-            materialMaskedTextBox1.TabStop = false;
-            materialMaskedTextBox1.TextAlign = HorizontalAlignment.Left;
-            materialMaskedTextBox1.TextMaskFormat = MaskFormat.IncludeLiterals;
-            materialMaskedTextBox1.TrailingIcon = null;
-            materialMaskedTextBox1.UseSystemPasswordChar = false;
-            materialMaskedTextBox1.ValidatingType = null;
-            // 
-            // btnAddVendor
-            // 
-            btnAddVendor.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddVendor.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnAddVendor.Depth = 0;
-            btnAddVendor.HighEmphasis = true;
-            btnAddVendor.Icon = null;
-            btnAddVendor.Location = new Point(1745, 62);
-            btnAddVendor.Margin = new Padding(4, 6, 4, 6);
-            btnAddVendor.MouseState = MaterialSkin.MouseState.HOVER;
-            btnAddVendor.Name = "btnAddVendor";
-            btnAddVendor.NoAccentTextColor = Color.Empty;
-            btnAddVendor.Size = new Size(112, 36);
-            btnAddVendor.TabIndex = 0;
-            btnAddVendor.Text = "Add Vendor";
-            btnAddVendor.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnAddVendor.UseAccentColor = false;
-            btnAddVendor.UseVisualStyleBackColor = true;
-            btnAddVendor.Click += btnAddVendor_Click;
+            panel2.Location = new Point(-1, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1908, 981);
+            panel2.TabIndex = 0;
             // 
             // stockEntryTab
             // 
+            stockEntryTab.Controls.Add(panel3);
             stockEntryTab.Location = new Point(4, 29);
             stockEntryTab.Name = "stockEntryTab";
             stockEntryTab.Size = new Size(1906, 980);
@@ -285,8 +134,16 @@
             stockEntryTab.Text = "Stock Entry";
             stockEntryTab.UseVisualStyleBackColor = true;
             // 
+            // panel3
+            // 
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1907, 980);
+            panel3.TabIndex = 0;
+            // 
             // stockAdjustmentTab
             // 
+            stockAdjustmentTab.Controls.Add(panel4);
             stockAdjustmentTab.Location = new Point(4, 29);
             stockAdjustmentTab.Name = "stockAdjustmentTab";
             stockAdjustmentTab.Size = new Size(1906, 980);
@@ -294,8 +151,16 @@
             stockAdjustmentTab.Text = "Stock Adjustment";
             stockAdjustmentTab.UseVisualStyleBackColor = true;
             // 
+            // panel4
+            // 
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(1906, 980);
+            panel4.TabIndex = 0;
+            // 
             // brandsCategoryTab
             // 
+            brandsCategoryTab.Controls.Add(panel5);
             brandsCategoryTab.Location = new Point(4, 29);
             brandsCategoryTab.Name = "brandsCategoryTab";
             brandsCategoryTab.Size = new Size(1906, 980);
@@ -303,8 +168,16 @@
             brandsCategoryTab.Text = "Brands & Category";
             brandsCategoryTab.UseVisualStyleBackColor = true;
             // 
+            // panel5
+            // 
+            panel5.Location = new Point(3, 3);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(1903, 974);
+            panel5.TabIndex = 0;
+            // 
             // recordsTab
             // 
+            recordsTab.Controls.Add(panel6);
             recordsTab.Location = new Point(4, 29);
             recordsTab.Name = "recordsTab";
             recordsTab.Size = new Size(1906, 980);
@@ -312,8 +185,16 @@
             recordsTab.Text = "Records";
             recordsTab.UseVisualStyleBackColor = true;
             // 
+            // panel6
+            // 
+            panel6.Location = new Point(3, 3);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(1900, 974);
+            panel6.TabIndex = 0;
+            // 
             // salesHistoryTab
             // 
+            salesHistoryTab.Controls.Add(panel7);
             salesHistoryTab.Location = new Point(4, 29);
             salesHistoryTab.Name = "salesHistoryTab";
             salesHistoryTab.Size = new Size(1906, 980);
@@ -321,14 +202,29 @@
             salesHistoryTab.Text = "Sales History";
             salesHistoryTab.UseVisualStyleBackColor = true;
             // 
+            // panel7
+            // 
+            panel7.Location = new Point(3, 3);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(1904, 977);
+            panel7.TabIndex = 0;
+            // 
             // userAccountsTab
             // 
+            userAccountsTab.Controls.Add(panel8);
             userAccountsTab.Location = new Point(4, 29);
             userAccountsTab.Name = "userAccountsTab";
             userAccountsTab.Size = new Size(1906, 980);
             userAccountsTab.TabIndex = 8;
             userAccountsTab.Text = "User Accounts";
             userAccountsTab.UseVisualStyleBackColor = true;
+            // 
+            // panel8
+            // 
+            panel8.Location = new Point(3, 3);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(1904, 977);
+            panel8.TabIndex = 0;
             // 
             // AdminForm
             // 
@@ -342,10 +238,13 @@
             Load += AdminForm_Load;
             materialTabControl1.ResumeLayout(false);
             productTab.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             vendorTab.ResumeLayout(false);
-            vendorTab.PerformLayout();
+            stockEntryTab.ResumeLayout(false);
+            stockAdjustmentTab.ResumeLayout(false);
+            brandsCategoryTab.ResumeLayout(false);
+            recordsTab.ResumeLayout(false);
+            salesHistoryTab.ResumeLayout(false);
+            userAccountsTab.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -362,12 +261,12 @@
         private TabPage salesHistoryTab;
         private TabPage userAccountsTab;
         private Panel panel1;
-        private MaterialSkin.Controls.MaterialButton materialButton5;
-        private MaterialSkin.Controls.MaterialButton materialButton4;
-        private MaterialSkin.Controls.MaterialButton materialButton3;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialButton btnAddVendor;
-        private MaterialSkin.Controls.MaterialMaskedTextBox materialMaskedTextBox1;
+        private Panel panel2;
+        private Panel panel3;
+        private Panel panel4;
+        private Panel panel5;
+        private Panel panel6;
+        private Panel panel7;
+        private Panel panel8;
     }
 }

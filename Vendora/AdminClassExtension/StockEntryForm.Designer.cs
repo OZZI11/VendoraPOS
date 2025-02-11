@@ -1,6 +1,6 @@
-﻿namespace Vendora
+﻿namespace Vendora.AdminClassExtension
 {
-    partial class RecordsPage
+    partial class StockEntryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
             SuspendLayout();
             // 
-            // RecordsPage
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(223, 111);
+            label1.Name = "label1";
+            label1.Size = new Size(78, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Stockentry";
+            // 
+            // StockEntryForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1888, 933);
-            Name = "RecordsPage";
-            Text = "RecordsPage";
+            ClientSize = new Size(800, 450);
+            Controls.Add(label1);
+            Name = "StockEntryForm";
+            Text = "StockEntryForm";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
     }
 }

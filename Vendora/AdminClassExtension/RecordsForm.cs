@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Vendora
+namespace Vendora.AdminClassExtension
 {
-    public partial class VendorDetails : Form
+    public partial class RecordsForm : Form
     {
-        public VendorDetails()
+        public RecordsForm()
         {
             InitializeComponent();
         }
