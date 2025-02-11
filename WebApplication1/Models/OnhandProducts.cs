@@ -4,25 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DomainLayer.Models
+namespace WebApplication1.Models
 {
     public class OnhandProducts
     {
-        public int PCODE { get; set; }
-        public int BARCODE { get; set; }
+        public string PCODE { get; set; }
+        public string BARCODE { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Brand { get; set; }
         public string Category { get; set; }
-        public bool Price { get; set; }
-        public int Reorder { get; set; }
-        public int Stockonhand { get; set; }
-        public int RefNo { get; set; }
+        public string Price { get; set; }
+        public string Reorder { get; set; }
+        public string Stockonhand { get; set; }
+        public string RefNo { get; set; }
         public string Stockinby { get; set; }
         public string Vendor { get; set; }
-        public int Contact_Number { get; set; }
+        public string Contact_Number { get; set; }
         public string Stockdate { get; set; }
-        public int Entry_Quantity { get; set; }
+        public string Entry_Quantity { get; set; }
     }
 }
 

@@ -5,22 +5,22 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
-namespace DomainLayer.Models
+namespace WebApplication1.Models
 {
     public class SoldProduct
     {
         [Key]
 
-        public int PCODE { get; set; }
-        public int BARCODE { get; set; }
+        public string PCODE { get; set; }
+        public string BARCODE { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Brand { get; set; }
-        public string Category { get; set; }
-        public bool Price { get; set; }
-        public int Quantity { get; set; }
-        public bool Discount { get; set; }
-        public bool Total { get; set; }
+        public string Category { get; set; }           
+        public string Price {  get; set; }
+        public string Quantity {  get; set; }
+        public string Discount { get; set; }
+        public string Total { get; set; }
 
 
 

@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DomainLayer.Models
+namespace WebApplication1.Models
 {
     public class CancelledProducts
     {
 
-        public int TransactionNo { get; set; }
-        public int PCODE { get; set; }
+        public string TransactionNo { get; set; }
+        public string PCODE { get; set; }
         public string Name { get; set; }
-        public bool Price { get; set; }
+        public string Price { get; set; }
         public string Description { get; set; }
-        public int Quantity { get; set; }
-        public bool Total { get; set; }
+        public string Quantity { get; set; }
+        public string Total { get; set; }
         public string Date { get; set; }
         public string VoidBy { get; set; }
         public string CancelledBy { get; set; }
