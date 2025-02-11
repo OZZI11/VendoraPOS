@@ -17,7 +17,7 @@ namespace Vendora.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("C:\\Users\\user\\AppData\\Local\\Microsoft\\Microsoft SQL Server Local DB\\Instances\\MSSQLLocalDB");
+            optionsBuilder.UseSqlServer("Data Source=.\\SQLEXPRESS;Initial Catalog = products_db;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
             base.OnConfiguring(optionsBuilder);
         }
 
