@@ -16,13 +16,7 @@ namespace Vendora
 
         }
 
-        private void materialButton1_Click(object sender, EventArgs e)
-        {
-            AdminForm Admin = new AdminForm();
-            this.Hide();
-            Admin.Show();
-        }
-
+    
         private void materialButton1_Click_1(object sender, EventArgs e)
         {
             AdminForm adminForm = new AdminForm();

@@ -28,35 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            AddProductButton = new MaterialSkin.Controls.MaterialButton();
             SuspendLayout();
             // 
-            // materialButton1
+            // AddProductButton
             // 
-            materialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton1.Depth = 0;
-            materialButton1.HighEmphasis = true;
-            materialButton1.Icon = null;
-            materialButton1.Location = new Point(206, 149);
-            materialButton1.Margin = new Padding(4, 6, 4, 6);
-            materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton1.Name = "materialButton1";
-            materialButton1.NoAccentTextColor = Color.Empty;
-            materialButton1.Size = new Size(158, 36);
-            materialButton1.TabIndex = 0;
-            materialButton1.Text = "materialButton1";
-            materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton1.UseAccentColor = false;
-            materialButton1.UseVisualStyleBackColor = true;
+            AddProductButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            AddProductButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            AddProductButton.Depth = 0;
+            AddProductButton.HighEmphasis = true;
+            AddProductButton.Icon = null;
+            AddProductButton.Location = new Point(481, 47);
+            AddProductButton.Margin = new Padding(4, 6, 4, 6);
+            AddProductButton.MouseState = MaterialSkin.MouseState.HOVER;
+            AddProductButton.Name = "AddProductButton";
+            AddProductButton.NoAccentTextColor = Color.Empty;
+            AddProductButton.Size = new Size(158, 36);
+            AddProductButton.TabIndex = 0;
+            AddProductButton.Text = "Add Product";
+            AddProductButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            AddProductButton.UseAccentColor = false;
+            AddProductButton.UseVisualStyleBackColor = true;
             // 
             // AdminProduct
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(materialButton1);
-            FormBorderStyle = FormBorderStyle.None;
+            Controls.Add(AddProductButton);
             Name = "AdminProduct";
             Text = "Form1";
             ResumeLayout(false);
@@ -65,6 +64,6 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialButton AddProductButton;
     }
 }
