@@ -33,8 +33,7 @@ namespace Vendora.AddForm
 
         private void ProductConfirmButton_Click(object sender, EventArgs e)
         {
-            var entity = AdminProduct.OnhandProductsEntity;
-            entity = new DomainLayer.Models.OnhandProducts
+            var entity = new DomainLayer.Models.OnhandProducts
             {
                 BARCODE = BARCODE.Text,
                 Name = Name.Text,
@@ -44,8 +43,8 @@ namespace Vendora.AddForm
                 Price = double.TryParse(Price.Text, out var priceValue) ? priceValue : 0,
                 Reorder = int.TryParse(Reorder.Text, out var reorderValue) ? reorderValue : 0
             };
-            context.Add(entity);
-            context.Save();
+            context?.Add(entity);
+            context?.Save();
 
             MessageBox.Show("Product added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
