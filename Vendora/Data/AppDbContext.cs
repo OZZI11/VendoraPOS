@@ -15,15 +15,23 @@ namespace Vendora.Data
                 
         }
 
+        public AppDbContext()
+        {
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=192.168.1.5\\SQLEXPRESS;Initial Catalog = products_db; User Id=VENDORA_SQLEXPRESS; Password=Vendor@2025; Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            optionsBuilder.UseSqlServer("Data Source=LAPTOP-AEJ6B24K\\SQLEXPRESS;User ID=VENDORA_SQLEXPRESS;Password=********;Connect Timeout=30;Encrypt=False;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
             base.OnConfiguring(optionsBuilder);
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+
             base.OnModelCreating(builder);
+            // Mark OnhandProducts as keyless
+            builder.Entity<DomainLayer.Models.OnhandProducts>().HasNoKey();
+
         }
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<DomainLayer.Models.OnhandProducts> OnhandProducts { get; set; }

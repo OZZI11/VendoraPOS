@@ -10,11 +10,13 @@ using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using Vendora.AdminClassExtension;
+using InfastructureLayer.Repositories;
 
 namespace Vendora
 {
     public partial class AdminForm : MaterialForm
     {
+        public readonly IOnhandRepository? context;
         public AdminForm()
         {
 
@@ -69,7 +71,7 @@ namespace Vendora
         private void LoadProductForm()
         {
             panel1.Controls.Clear();
-            AdminProduct adminProduct = new AdminProduct();
+            AdminProduct adminProduct = new AdminProduct(context);
             adminProduct.TopLevel = false;
             adminProduct.FormBorderStyle = FormBorderStyle.None;
             adminProduct.Dock = DockStyle.Fill;

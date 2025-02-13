@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Areas.Identity.Data;
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = "Data Source=192.168.1.5\\SQLEXPRESS; Initial Catalog = products_db; User Id=VENDORA_SQLEXPRESS; Password=Vendor@2025;Connect Timeout = 30; Encrypt = False; Trust Server Certificate=False; Application Intent = ReadWrite; Multi Subnet Failover=False";
+var connectionString = "Data Source=LAPTOP-AEJ6B24K\\SQLEXPRESS;User ID=VENDORA_SQLEXPRESS;Password=Vendor@2025;Connect Timeout=30;Encrypt=False;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
 

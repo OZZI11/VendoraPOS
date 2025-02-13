@@ -38,17 +38,18 @@
             AddProductButton.Depth = 0;
             AddProductButton.HighEmphasis = true;
             AddProductButton.Icon = null;
-            AddProductButton.Location = new Point(481, 47);
+            AddProductButton.Location = new Point(666, 38);
             AddProductButton.Margin = new Padding(4, 6, 4, 6);
             AddProductButton.MouseState = MaterialSkin.MouseState.HOVER;
             AddProductButton.Name = "AddProductButton";
             AddProductButton.NoAccentTextColor = Color.Empty;
-            AddProductButton.Size = new Size(158, 36);
+            AddProductButton.Size = new Size(121, 36);
             AddProductButton.TabIndex = 0;
             AddProductButton.Text = "Add Product";
             AddProductButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             AddProductButton.UseAccentColor = false;
             AddProductButton.UseVisualStyleBackColor = true;
+            AddProductButton.Click += AddProductButton_Click;
             // 
             // AdminProduct
             // 
@@ -58,6 +59,7 @@
             Controls.Add(AddProductButton);
             Name = "AdminProduct";
             Text = "Form1";
+            Load += AdminProduct_Load;
             ResumeLayout(false);
             PerformLayout();
         }
